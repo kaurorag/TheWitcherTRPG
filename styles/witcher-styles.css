@@ -1,5 +1,6 @@
 @import "./character-header.css";
 @import "./armor-sheet.css";
+@import "./attack-sheet.css";
 @import "./system-styles.css";
 @import "./monster-sheet.css";
 @import "./tab-background.css";
@@ -8,8 +9,11 @@
 @import "./monster-skill-tab.css";
 @import "./loot-sheet.css";
 @import "./profession-sheet.css";
+@import "./race-sheet.css";
 @import "./crit-wounds-table.css";
 @import "./item-sheets.css";
+@import "./substances.css";
+@import "./weapon-roll.css";
 
 @font-face {
     font-family:'Thewitcher';

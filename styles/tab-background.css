@@ -23,11 +23,17 @@
 }
 
 .crit-wounds {
-    width: 783px;
+    min-width: 783px;
+    flex-grow: 1;
     margin: 5px;
     padding: 10px;
+
 }
 
 .modifier-display {
     min-width: 100px;
+}
+
+.BackgroundDescription {
+    height: 304px;
 }
