@@ -611,6 +611,6 @@
   "WITCHER.Settings.useVerbalCombatRuleHint": "Erlaubt es Spielern alle Aktionen für verbalen Schlagabtausch zu sehen.",
   "WITCHER.Settings.specialFont": "Benutze die besondere Schriftart von 'The Witcher'",
   "WITCHER.Settings.clickableImageItemTypes": "Zeige 'Zoombar'-Checkbox bei Items",
-  "WITCHER.Settings.clickableImageItemTypesHint": "Eine kommaseparierte Liste von Item Typen, bei denen eine Checkbox angezeigt werden soll. Wenn die Checkbox angekreuzt ist, können die Spieler im Inventar auf das Item Bild klicken um es zu vergrößern. Mögliche Item Typen sind 'valuable', 'weapon', 'armor', 'alchemical', 'diagrams', 'component'.",
+  "WITCHER.Settings.clickableImageItemTypesHint": "Eine kommaseparierte Liste von Item Typen, bei denen eine Checkbox angezeigt werden soll. Wenn die Checkbox angekreuzt ist, können die Spieler im Inventar auf das Item Bild klicken um es zu vergrößern. Mögliche Item Typen sind 'valuable', 'weapon', 'armor', 'alchemical', 'diagrams', 'component', 'mount', 'mutagen'.",
   "WITCHER.Settings.clickableImageCheckboxForGMOnly": "Zeige 'Zoombar'-Checkbox nur dem GM"
 }

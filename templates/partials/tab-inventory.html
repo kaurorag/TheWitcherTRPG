@@ -703,8 +703,7 @@
                         <a class="item-armor-display"><i class="fas fa-info"></i></a>
                     </td>
                     <td>
-                        <img src="{{valuable.img}}" class="item-img dragable" draggable="true"
-                             data-id="{{valuable._id}}"/>
+                        {{> "systems/TheWitcherTRPG/templates/partials/item-image.html" item=valuable}}
                     </td>
                     <td>
                         <input class="inline-edit item-quantity" data-field="system.quantity" type="text"
@@ -770,8 +769,7 @@
                         <a class="item-armor-display"><i class="fas fa-info"></i></a>
                     </td>
                     <td>
-                        <img src="{{valuable.img}}" class="item-img dragable" draggable="true"
-                             data-id="{{valuable._id}}"/>
+                        {{> "systems/TheWitcherTRPG/templates/partials/item-image.html" item=valuable}}
                     </td>
                     <td>
                         <input class="inline-edit item-quantity" data-field="system.quantity" type="text"
@@ -831,8 +829,7 @@
                         <a class="item-armor-display"><i class="fas fa-info"></i></a>
                     </td>
                     <td>
-                        <img src="{{valuable.img}}" class="item-img dragable" draggable="true"
-                             data-id="{{valuable._id}}"/>
+                        {{> "systems/TheWitcherTRPG/templates/partials/item-image.html" item=valuable}}
                     </td>
                     <td>
                         <input class="inline-edit item-quantity" data-field="system.quantity" type="text"
@@ -889,8 +886,9 @@
             {{#each alchemicalTreatments as |component id|}}
             <tbody class="item" data-item-id="{{component._id}}">
                     <tr>
-                        <td><img src="{{component.img}}" class="item-img dragable" draggable="true"
-                                 data-id="{{component._id}}"/></td>
+                        <td>
+                            {{> "systems/TheWitcherTRPG/templates/partials/item-image.html" item=component}}
+                        </td>
                         <td><input class="inline-edit item-quantity" data-field="system.quantity" type="text"
                                    value="{{component.system.quantity}}" data-dtype="Number"/></td>
                         <td><input class="inline-edit" data-field="name" type="text" value="{{component.name}}"
@@ -957,8 +955,9 @@
                 {{#each ingotsAndMinerals as |component id|}}
                 <tbody class="item" data-item-id="{{component._id}}">
                     <tr>
-                        <td><img src="{{component.img}}" class="item-img dragable" draggable="true"
-                                 data-id="{{component._id}}"/></td>
+                        <td>
+                            {{> "systems/TheWitcherTRPG/templates/partials/item-image.html" item=component}}
+                        </td>
                         <td><input class="inline-edit item-quantity" data-field="system.quantity" type="text"
                                    value="{{component.system.quantity}}" data-dtype="Number"/></td>
                         <td><input class="inline-edit" data-field="name" type="text" value="{{component.name}}"
@@ -985,8 +984,9 @@
                 {{#each hidesAndAnimalParts as |component id|}}
                 <tbody class="item" data-item-id="{{component._id}}">
                     <tr>
-                        <td><img src="{{component.img}}" class="item-img dragable" draggable="true"
-                                 data-id="{{component._id}}"/></td>
+                        <td>
+                            {{> "systems/TheWitcherTRPG/templates/partials/item-image.html" item=component}}
+                        </td>
                         <td><input class="inline-edit item-quantity" data-field="system.quantity" type="text"
                                    value="{{component.system.quantity}}" data-dtype="Number"/></td>
                         <td><input class="inline-edit" data-field="name" type="text" value="{{component.name}}"

@@ -212,7 +212,7 @@ export default class WitcherActorSheet extends ActorSheet {
 
     data.activeEffects = actor.getList("effect").filter(e => e.system.isActive);
 
-    data.totalWeight = data.items.weight() + calc_currency_weight(data.system.currency);
+    data.totalWeight = data.items.filter(i => i.type != 'mount').weight() + calc_currency_weight(data.system.currency);
     data.totalCost = data.items.cost();
 
     data.noviceSpells = data.spells.filter(s => s.system.level == "novice" &&
@@ -1990,7 +1990,7 @@ export default class WitcherActorSheet extends ActorSheet {
   }
 
   async _onItemShow(event) {
-    event.preventDefault;
+    event.preventDefault();
     let itemId = event.currentTarget.closest(".item").dataset.itemId;
     let item = this.actor.items.get(itemId);
 
@@ -2000,6 +2000,7 @@ export default class WitcherActorSheet extends ActorSheet {
       buttons: {}
     }, {
       width: 520,
+      height: 'fit-content',
       resizable: true
     }).render(true);
   }
