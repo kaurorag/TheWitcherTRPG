@@ -1064,7 +1064,14 @@
         "floren": 0,
         "crown": 0,
         "oren": 0,
-        "falsecoin": 0
+        "falsecoin": 0,
+        "stolen_bizant": 0,
+        "stolen_ducat": 0,
+        "stolen_lintar": 0,
+        "stolen_floren": 0,
+        "stolen_crown": 0,
+        "stolen_oren": 0,
+        "stolen_falsecoin": 0
       }
     }
   },
