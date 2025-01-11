@@ -285,8 +285,13 @@ export default class WitcherItem extends Item {
 
       if (result) {
         let craftedItem = { ...this.system.associatedItem };
-        Item.create(craftedItem, { parent: this.actor });
-        craftedItemName = craftedItem.name;
+          let retCode = await this.actor.addItem(craftedItem.name,1)
+          console.log("Returned value", retCode)
+        if ( retCode == -1){ // If it failed to add (not existing)  
+          console.log("Item not found, creating it")
+          Item.create(craftedItem, { parent: this.actor });
+          craftedItemName = craftedItem.name;
+        }
       }
     } else {
       craftedItemName = game.i18n.localize("WITCHER.craft.SuccessfulCraftForNothing");

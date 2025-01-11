@@ -153,6 +153,16 @@ export default class WitcherActor extends Actor {
     }
   }
 
+  async addItem(itemName, quantityToAdd) {
+    let foundItem = this.items.filter(w => w.name == itemName)[0]
+    console.log("Found item:",foundItem)
+    if (foundItem == null){
+      return -1
+    }
+    let newQuantity = foundItem.system.quantity + quantityToAdd
+     await foundItem.update({ 'system.quantity': newQuantity })
+  }
+
   getLocationObject(location) {
     let alias = "";
     let locationFormula = `(${game.i18n.localize("WITCHER.Chat.FullDmg")})`;

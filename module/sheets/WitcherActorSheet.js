@@ -2232,6 +2232,7 @@ export default class WitcherActorSheet extends ActorSheet {
             let isBlinded = html.find("[name=isBlinded]").prop("checked");
             let isSilhouetted = html.find("[name=isSilhouetted]").prop("checked");
             let customAim = html.find("[name=customAim]")[0].value;
+            let isAmbidextry = html.find("[name=isAmbidextry]").prop("checked");
 
             let range = item.system.range ? html.find("[name=range]")[0].value : null;
             let customAtt = html.find("[name=customAtt]")[0].value;
@@ -2281,6 +2282,10 @@ export default class WitcherActorSheet extends ActorSheet {
               if (isFastDraw) {
                 attFormula += !displayRollDetails ? `-3` :
                   `-3[${game.i18n.localize("WITCHER.Dialog.attackIsFastDraw")}]`;
+              }
+              if (isAmbidextry) {
+                attFormula += !displayRollDetails ? `-3` :
+                  `-3[${game.i18n.localize("WITCHER.Dialog.ambidextry")}]`;
               }
               if (isProne) {
                 attFormula += !displayRollDetails ? `-2` :
